@@ -1,0 +1,34 @@
+/* Featured Cars */
+.feature-card {
+  height: 200px;
+  position: relative;
+}
+
+.feature-card .img {
+  width: 100%;
+  display: block;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.feature-card:hover .card::before {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card-body {
+  position: absolute;
+  color: white;
+}
+
+.card-body h5 {
+  font-size: 2rem;
+}
